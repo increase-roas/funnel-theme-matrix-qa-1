@@ -1,0 +1,6 @@
+---
+import "../styles/funnel.css";
+interface Props { title: string; description: string; tracking: Record<string, unknown>; }
+const { title, description, tracking } = Astro.props;
+---
+<!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={description} /><title>{title}</title></head><body><main><slot /></main><script is:inline define:vars={{ tracking }}>window.__FUNNEL_TRACKING__ = tracking;</script><script is:inline src="/scripts/funnel-runtime.js"></script></body></html>

@@ -1,0 +1,9 @@
+---
+import FunnelLayout from "../layouts/FunnelLayout.astro";
+const tracking = {"browserEvent":"PageView","serverEvent":"PageView","stepKey":"thank-you","path":"/thank-you"};
+---
+<FunnelLayout title="Thank you" description="" tracking={tracking}>
+<section class="section section-boxed pf-section-73-65-63-74-69-6f-6e-2d-74-68-61-6e-6b-2d-79-6f-75" data-section-id="section-thank-you"><div class="row pf-row-72-6f-77-2d-74-68-61-6e-6b-2d-79-6f-75" data-row-id="row-thank-you"><div class="column pf-column-63-6f-6c-2d-74-68-61-6e-6b-2d-79-6f-75" data-column-id="col-thank-you"><h1 class="funnel-element pf-element-65-6c-2d-74-68-61-6e-6b-2d-79-6f-75-2d-68-65-61-64-69-6e-67" data-block-id="el-thank-you-heading">Thanks — we got your request</h1>
+<p class="funnel-element pf-element-65-6c-2d-74-68-61-6e-6b-2d-79-6f-75-2d-74-65-78-74" data-block-id="el-thank-you-text">A specialist will follow up. You can book a time now.</p>
+<a class="funnel-element pf-element-65-6c-2d-74-68-61-6e-6b-2d-79-6f-75-2d-62-75-74-74-6f-6e funnel-button" data-block-id="el-thank-you-button" data-funnel-link data-destination="/booking" href="/booking">Book a visit</a></div></div></section>
+</FunnelLayout>

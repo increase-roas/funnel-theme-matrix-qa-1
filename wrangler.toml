@@ -1,0 +1,19 @@
+name = "funnel-theme-matrix-qa-1"
+compatibility_date = "2026-08-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[vars]
+FUNNEL_SHEET_TAB = "SL-7-1"
+GHL_LOCATION_ID = "L1JFvAZlZIid54YjXLp8"
+GOOGLE_SHEETS_ID = "1utqJJ6oq7-eaUzbIqzuXNnH3InD5rl5XTAVCwK4WZ0M"
+META_GRAPH_API_VERSION = "v26.0"
+META_PIXEL_ID = "1257695509378686"
+
+[[d1_databases]]
+binding = "FUNNEL_DB"
+database_name = "funnel-theme-matrix-qa-1-1"
+database_id = "52acc48a-234e-4378-ae83-b8a27c5792d3"
+migrations_dir = "migrations"

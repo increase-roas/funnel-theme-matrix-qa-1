@@ -1,0 +1,16 @@
+---
+import FunnelLayout from "../layouts/FunnelLayout.astro";
+const tracking = {"browserEvent":"ViewContent","serverEvent":"Lead","stepKey":"form","path":"/form"};
+---
+<FunnelLayout title="Get your offer" description="" tracking={tracking}>
+<section class="section section-form pf-section-73-65-63-74-69-6f-6e-2d-66-6f-72-6d" data-section-id="section-form"><div class="row pf-row-72-6f-77-2d-66-6f-72-6d" data-row-id="row-form"><div class="column pf-column-63-6f-6c-2d-66-6f-72-6d" data-column-id="col-form"><h1 class="funnel-element pf-element-65-6c-2d-66-6f-72-6d-2d-68-65-61-64-69-6e-67" data-block-id="el-form-heading">Tell us how to reach you</h1>
+<form class="funnel-element pf-element-65-6c-2d-66-6f-72-6d funnel-form" data-block-id="el-form" data-funnel-form data-destination="/thank-you">
+<label><span>first Name</span><input name="firstName" type="text" required /></label>
+<label><span>last Name</span><input name="lastName" type="text" required /></label>
+<label><span>email</span><input name="email" type="email" required /></label>
+<label><span>phone</span><input name="phone" type="tel" required /></label>
+<label class="consent"><input name="consent" type="checkbox" value="yes" required /><span>I agree to be contacted about this request. Consent is not a condition of purchase.</span></label>
+<button class="funnel-button" type="submit">Continue</button>
+</form>
+<a class="funnel-element pf-element-65-6c-2d-66-6f-72-6d-2d-73-75-62-6d-69-74 funnel-button" data-block-id="el-form-submit" data-funnel-link data-destination="/thank-you" href="/thank-you">Submit</a></div></div></section>
+</FunnelLayout>

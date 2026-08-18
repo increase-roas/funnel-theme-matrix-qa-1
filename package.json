@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "astro": "7.2.1",
+    "@astrojs/cloudflare": "14.2.1"
+  },
+  "devDependencies": {
+    "wrangler": "4.124.0"
+  }
+}

@@ -1,0 +1,9 @@
+---
+import FunnelLayout from "../layouts/FunnelLayout.astro";
+const tracking = {"browserEvent":"ViewContent","serverEvent":"PageView","stepKey":"booking","path":"/booking"};
+---
+<FunnelLayout title="Book a visit" description="" tracking={tracking}>
+<section class="section section-boxed pf-section-73-65-63-74-69-6f-6e-2d-62-6f-6f-6b-69-6e-67" data-section-id="section-booking"><div class="row pf-row-72-6f-77-2d-62-6f-6f-6b-69-6e-67" data-row-id="row-booking"><div class="column pf-column-63-6f-6c-2d-62-6f-6f-6b-69-6e-67" data-column-id="col-booking"><h1 class="funnel-element pf-element-65-6c-2d-62-6f-6f-6b-69-6e-67-2d-68-65-61-64-69-6e-67" data-block-id="el-booking-heading">Pick a time</h1>
+<p class="funnel-element pf-element-65-6c-2d-62-6f-6f-6b-69-6e-67-2d-74-65-78-74" data-block-id="el-booking-text">Choose a showroom or delivery window.</p>
+<a class="funnel-element pf-element-65-6c-2d-62-6f-6f-6b-69-6e-67-2d-62-75-74-74-6f-6e funnel-button" data-block-id="el-booking-button" data-funnel-link data-destination="/upsell" href="/upsell">Open booking</a></div></div></section>
+</FunnelLayout>
